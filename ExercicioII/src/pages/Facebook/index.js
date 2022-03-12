@@ -4,11 +4,13 @@ import {SafeAreaView,
         Text,
         Button,
         StyleSheet,
-        TextInput} from 'react-native';
+        TextInput,
+        StatusBar} from 'react-native';
 
 function Facebook({navigation}){
     return(
       <SafeAreaView style = {{flex:1}}>
+        <StatusBar hidden />
         <View style = {styles.container}>
           <Text style = {[styles.primaryTitle]} >facebook</Text>
           <TextInput

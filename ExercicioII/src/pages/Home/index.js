@@ -4,11 +4,13 @@ import {View,
         Button,
         StyleSheet,
         SafeAreaView,
-        TextInput} from 'react-native';
+        TextInput,
+        StatusBar} from 'react-native';
 
 function Home({navigation}){
     return(
       <SafeAreaView style = {{flex:1}}>
+        <StatusBar hidden />
         <View style = {styles.container}>
           <View style = {styles.secondContainer}>
             <View style = {[styles.littleContainer, styles.margin]}></View>

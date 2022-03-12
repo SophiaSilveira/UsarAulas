@@ -2,11 +2,13 @@ import React from 'react';
 import {View,
         Text,
         StyleSheet,
-        SafeAreaView} from 'react-native';
+        SafeAreaView,
+        StatusBar} from 'react-native';
 
 function Login({navigation}){
     return(
       <SafeAreaView style = {{flex:1}}>
+        <StatusBar hidden = {false} />
         <View style = {styles.container}>
           <View style = {styles.containerOne}></View>
           <View style = {styles.containerTwo}>
